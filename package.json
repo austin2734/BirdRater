@@ -1,0 +1,23 @@
+{
+  "name": "birdrater",
+  "version": "1.0.0",
+  "description": "Application that allows user to rate bird photos uploaded by other users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austin2734/BirdRater.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austin2734/BirdRater/issues"
+  },
+  "homepage": "https://github.com/austin2734/BirdRater#readme",
+  "dependencies": {
+    "fastify": "^4.3.0"
+  }
+}
