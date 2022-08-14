@@ -1,11 +1,20 @@
 const fastify = require('fastify')({ logger: true })
-const PORT = 5000
-const birds = require('./birds')
 
-// Declare a route
-fastify.get('/birds', (request, reply) => {
-  reply.send(birds)
+fastify.register(require('./routes/birds'))
+
+fastify.register(require('@fastify/swagger'), {
+  exposeRoute: true,
+  routePrefix: '/docs',
+  swagger: {
+    info: {
+      title: 'fastify-api',
+      description: 'Testing the Fastify swagger API',
+      version: '0.1.0'
+    }
+  }
 })
+
+const PORT = 5000
 
 // Run the server!
 const start = async () => {

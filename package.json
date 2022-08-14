@@ -2,10 +2,10 @@
   "name": "birdrater",
   "version": "1.0.0",
   "description": "Application that allows user to rate bird photos uploaded by other users",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,16 @@
   },
   "homepage": "https://github.com/austin2734/BirdRater#readme",
   "dependencies": {
+    "@fastify/swagger": "^7.4.1",
     "fastify": "^4.3.0",
-    "fastify-swagger": "^5.2.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
     "nodemon": "^2.0.19"
   }
 }
